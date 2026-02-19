@@ -1,4 +1,4 @@
-name: Continuous Integration Practice: Running Tests on push
+name: Continuous Integration Practice
 
 on:
   push: # triggering event is a push to the repo
