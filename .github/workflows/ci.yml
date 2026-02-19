@@ -3,7 +3,7 @@ name: Continuous Integration Practice: Running Tests on push
 on:
   push: # triggering event is a push to the repo
     branches:
-      -ci-activity-6-branch # branch that this will be activated on
+      - ci-activity-6-branch # branch that this will be activated on
 
 jobs:
   test: # job name
@@ -19,8 +19,8 @@ jobs:
         python-version: "3.10"
 
     - name: Install Dependencies
-      uses: pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
     - name: Run Tests
-      uses: pytest
+      run: pytest
 
